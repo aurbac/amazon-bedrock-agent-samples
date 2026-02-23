@@ -8,7 +8,7 @@
 > [!IMPORTANT]
 > **🚀 Ready-to-Deploy Agent Web Application**: Use this reference solution to build other agent-powered web applications across different industries. Extend the agent capabilities by adding custom tools for specific industry workflows and adapt it to various business domains.
 
-This solution provides a Generative AI application reference that allows users to interact with data through a natural language interface. The solution connects **[Amazon Bedrock Agents](https://aws.amazon.com/bedrock/agents/)** to a PostgreSQL database, providing data analysis capabilities through a Web Application interface.
+This solution provides a Generative AI application reference that allows users to interact with data through a natural language interface. The solution uses **[Amazon Bedrock Agents](https://aws.amazon.com/bedrock/agents/)** connected to a PostgreSQL database for data analysis capabilities, deployed with **[AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html)** for back-end infrastructure and **[AWS Amplify](https://docs.amplify.aws/)** for the front-end web application.
 
 <div align="center">
 <img src="./images/data-analyst-assistant-amazon-bedrock-agents.gif" alt="Conversational Data Analyst Assistant Solution with Amazon Bedrock Agents">
@@ -42,7 +42,7 @@ The following architecture diagram illustrates a reference solution for a genera
 
 ### CDK Infrastructure Deployment
 
-The **[AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/home.html)** stack deploys and configures the following managed services:
+The AWS CDK stack deploys and configures the following managed services:
 
 - **Amazon Bedrock Agent**: Powers the ***Data Analyst Assistant*** that answers questions by generating SQL queries using Claude Haiku 4.5
 - **AWS Lambda**: Processes agent requests through various tools including:
@@ -84,7 +84,7 @@ The **user interaction workflow** operates as follows:
 The deployment consists of two main steps:
 
 1. **Generative AI Application** - [Data Source and Amazon Bedrock Agent Deployment with AWS CDK](./cdk-video-games-sales-assistant-bedrock-agent/)
-2. **Front-End Implementation** - [Integrating Amazon Bedrock Agent with a Ready-to-Use Data Analyst Assistant Application](./amplify-video-games-sales-assistant-bedrock-agent/)
+2. **Front-End Implementation** - [Deploying a Conversational Data Analyst Assistant Solution with Amazon Bedrock Agents](./amplify-video-games-sales-assistant-bedrock-agent/)
 
 > [!NOTE]
 > *It is recommended to use the Oregon (us-west-2) or N. Virginia (us-east-1) regions to deploy the application.*
